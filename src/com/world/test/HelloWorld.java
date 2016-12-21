@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @Title: HelloWorld.java
  * @Package com.world.test
- * @Description: TODO(用一句话描述该文件做什么)
+ * @Description: TODO(测试GIT项目后)
  * @Author skyfree skyfree1989@163.com
  * @Date 2016年12月21日 下午8:15:56
  * @Version Vx.0
