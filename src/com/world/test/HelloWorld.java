@@ -7,6 +7,7 @@
 package com.world.test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -22,5 +23,7 @@ public class HelloWorld {
 		List<Object> list = new ArrayList<Object>();
 		list.add("AAA");
 		System.out.println("list集合个数：" + list.size());
+		
+		System.out.println(Arrays.toString(list.toArray()));
 	}
 }
