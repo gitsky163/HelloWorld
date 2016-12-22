@@ -6,10 +6,6 @@
 */
 package com.world.test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * @Title: HelloWorld.java
  * @Package com.world.test
@@ -20,10 +16,10 @@ import java.util.List;
  */
 public class HelloWorld {
 	public static void main(String[] args) {
-		List<Object> list = new ArrayList<Object>();
-		list.add("AAA");
-		System.out.println("list集合个数：" + list.size());
-		
-		System.out.println(Arrays.toString(list.toArray()));
+		String strs = "java, c#, , google, qq, , jquery";
+		String[] strArr = strs.split(",");
+		for (String str : strArr) {
+			System.out.println(StringUtil.isNullString(str) ? "null" : str);
+		}
 	}
 }
