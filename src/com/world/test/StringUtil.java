@@ -15,7 +15,19 @@ package com.world.test;
  * @Version Vx.0
  */
 public class StringUtil {
-	public static boolean isNull(String str) {
-		return (null == str || "".equals(str.trim()) || "null".equals(str.trim().toLowerCase())) ? true : false;
+	public static boolean isNullString(Object object) {
+		if(null == object) {
+			return true;
+		}
+		String str = object.toString().trim();
+		return ("".equals(str) || "null".equals(str.toLowerCase()) ) ? true : false;
+	}
+	
+	public static String replaceNull(Object object, String defaultVal){
+		if(isNullString(object)){
+			return defaultVal;
+		}else{
+			return object.toString().trim();
+		}
 	}
 }
